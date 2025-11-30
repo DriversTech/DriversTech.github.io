@@ -119,9 +119,26 @@
     }
 
     .contact-strip {
-      margin-top: 8px;
+      margin-top: 10px;
       font-size: 0.9rem;
       line-height: 1.4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    .contact-label {
+      font-weight: 600;
+    }
+
     }
 
     .contact-strip strong {
@@ -210,10 +227,20 @@
       </nav>
 
       <div class="contact-strip">
-        <div><strong>Hours:</strong> Sunday – Thursday, 10am – 4pm</div>
-        <div><strong>Call:</strong> <a href="tel:13174173716">317-417-3716</a></div>
-        <div><strong>Email:</strong> <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@gmail.com</a></div>
+        <div class="contact-item">
+          <span class="contact-label">Hours:</span>
+          <span>Sun–Thu, 10am–4pm</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Call:</span>
+          <a href="tel:13174173716">317-417-3716</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email:</span>
+          <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@gmail.com</a>
+        </div>
       </div>
+
     </header>
 
     <main>
