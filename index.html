@@ -5,42 +5,214 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Driver's Tech – Genuine Tech Repair</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    h1 { text-align: center; color: #9B4FBF; }
-    h2 { text-align: center; }
-    .tech-box {
-      background: #6ED3CF; color: #000; text-align: center;
-      padding: 10px; font-size: 2rem; font-weight: bold;
-      max-width: 280px; margin: 10px auto;
+    :root {
+      --purple: #9B4FBF;
+      --teal: #6ED3CF;
+      --text: #111111;
     }
-    .center { text-align: center; }
-    .tips { max-width: 600px; margin: 20px auto; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f4f4;
+      color: var(--text);
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      background: white;
+      padding: 24px 24px 28px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--purple);
+      margin-bottom: 8px;
+    }
+
+    .tech-tag {
+      display: inline-block;
+      background: var(--teal);
+      color: #000;
+      padding: 8px 40px;
+      border-radius: 6px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    nav a {
+      margin: 0 8px;
+      text-decoration: none;
+      color: var(--purple);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-strip {
+      margin-top: 14px;
+      font-size: 0.95rem;
+    }
+
+    .contact-strip strong {
+      font-weight: 600;
+    }
+
+    .contact-strip a {
+      color: var(--purple);
+      text-decoration: none;
+    }
+
+    .contact-strip a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      margin-top: 24px;
+      display: grid;
+      gap: 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 3px 14px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: var(--purple);
+    }
+
+    .tips ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .tips li {
+      margin-bottom: 6px;
+    }
+
+    .about p, .services p {
+      margin: 6px 0;
+    }
+
+    .services-list {
+      margin-top: 6px;
+      padding-left: 18px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+      margin: 24px 0 10px;
+    }
+
+    @media (max-width: 600px) {
+      header, section { padding: 16px; }
+      .brand { font-size: 2rem; }
+      .tech-tag { width: 100%; }
+    }
   </style>
 </head>
 <body>
+  <div class="page">
+    <header>
+      <div class="brand">Driver's Tech</div>
+      <div class="tech-tag">TECH</div>
+      <div class="tagline">Genuine Tech Repair &amp; Consultation</div>
 
-<h1>Driver's Tech</h1>
-<div class="tech-box">TECH</div>
-<h2>Genuine Tech Repair &amp; Consultation</h2>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#tips">Driver’s Tips</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<div class="center">
-  <p><strong>Hours:</strong> Sunday – Thursday, 10am – 4pm</p>
-  <p><strong>Call:</strong> <a href="tel:13174173716">317-417-3716</a></p>
-  <p><strong>Email:</strong> <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@gmail.com</a></p>
-</div>
+      <div class="contact-strip">
+        <div><strong>Hours:</strong> Sunday – Thursday, 10am – 4pm</div>
+        <div><strong>Call:</strong> <a href="tel:13174173716">317-417-3716</a></div>
+        <div><strong>Email:</strong> <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@gmail.com</a></div>
+      </div>
+    </header>
 
-<h2 class="center">Driver’s Tips</h2>
-<div class="tips">
-  <ul>
-    <li>Microsoft doesn’t need you to call them.</li>
-    <li>Don’t click pop-ups or “urgent” ads.</li>
-    <li>Restart Wifi by unplugging for 30 seconds.</li>
-    <li>Save your work often (Ctrl+S).</li>
-    <li>If frozen: Ctrl + Alt + Delete.</li>
-    <li>Reboot before calling.</li>
-    <li>Back up monthly.</li>
-  </ul>
-</div>
+    <main>
+      <section id="about" class="about">
+        <h2>About Driver's Tech</h2>
+        <p>I help people fix slow, misbehaving, or confusing computers without pressure or scare tactics.</p>
+        <p>You get clear explanations, honest options, and practical solutions that match how you actually use your tech.</p>
+      </section>
 
+      <section id="services" class="services">
+        <h2>Services</h2>
+        <p>Remote help and local support for Windows PCs and home office setups.</p>
+        <ul class="services-list">
+          <li>Slow or crashing computers</li>
+          <li>Virus, pop-up, and “fake support” cleanup</li>
+          <li>Wifi and printer issues</li>
+          <li>Data back-up and basic protection</li>
+          <li>New computer setup and data transfer</li>
+        </ul>
+        <p>Pricing is simple and discussed up front before any work is done.</p>
+      </section>
+
+      <section id="tips" class="tips">
+        <h2>Driver’s Tips</h2>
+        <ul>
+          <li>Microsoft doesn’t need you to call them.</li>
+          <li>Don’t click pop-ups or “urgent” ads.</li>
+          <li>Restart Wifi by unplugging for 30 seconds.</li>
+          <li>Save your work often (Ctrl+S).</li>
+          <li>If frozen: Ctrl + Alt + Delete.</li>
+          <li>Reboot before calling.</li>
+          <li>Back up monthly.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Phone:</strong> <a href="tel:13174173716">317-417-3716</a></p>
+        <p><strong>Email:</strong> <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@gmail.com</a></p>
+        <p>Send a brief description of what’s going wrong, and I’ll let you know the next step.</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Driver's Tech · Indianapolis, IN
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
