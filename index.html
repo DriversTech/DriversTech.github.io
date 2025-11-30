@@ -14,13 +14,13 @@
       --teal: #6ED3CF;
       --text: #111111;
     }
-        .logo {
+
+    .logo {
       display: block;
       max-width: 260px;
       width: 100%;
       margin: 0 auto 6px;
     }
-
 
     * { box-sizing: border-box; }
 
@@ -46,24 +46,6 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
       margin-top: 20px;
       text-align: center;
-    }
-
-    .brand {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: var(--purple);
-      margin-bottom: 8px;
-    }
-
-    .tech-tag {
-      display: inline-block;
-      background: var(--teal);
-      color: #000;
-      padding: 8px 40px;
-      border-radius: 6px;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      margin-bottom: 14px;
     }
 
     .tagline {
@@ -127,7 +109,7 @@
       justify-content: center;
       gap: 12px;
     }
-    
+
     .contact-item {
       display: inline-flex;
       align-items: center;
@@ -136,12 +118,6 @@
     }
 
     .contact-label {
-      font-weight: 600;
-    }
-
-    }
-
-    .contact-strip strong {
       font-weight: 600;
     }
 
@@ -172,7 +148,7 @@
       margin-bottom: 6px;
       font-size: 1.05rem;
       font-weight: 600;
-      letter-spacing:0.06em;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--purple);
     }
@@ -186,7 +162,8 @@
       margin-bottom: 6px;
     }
 
-    .about p, .services p {
+    .about p,
+    .services p {
       margin: 6px 0;
     }
 
@@ -203,9 +180,8 @@
     }
 
     @media (max-width: 600px) {
-      header, section { padding: 16px; }
-      .brand { font-size: 2rem; }
-      .tech-tag { width: 100%; }
+      header,
+      section { padding: 16px; }
     }
   </style>
 </head>
