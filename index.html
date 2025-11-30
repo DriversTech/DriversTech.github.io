@@ -170,6 +170,43 @@
       color: var(--purple);
     }
 
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .service-card {
+      background: #fafafa;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .service-card img {
+      width: 100%;
+      display: block;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    .service-card-body {
+      padding: 10px 12px 12px;
+    }
+
+    .service-card-title {
+      font-weight: 600;
+      margin: 0 0 6px;
+    }
+
+    .service-card-text {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    
     .tips ul {
       padding-left: 20px;
       margin: 0;
