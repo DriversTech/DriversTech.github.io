@@ -217,68 +217,32 @@
       margin-bottom: 6px;
     }
 
+
     .recommended-freeware {
-      margin-top: 32px;
+      margin-top: 24px;
       padding: 20px 24px;
       background: #ffffff;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-
-    .software-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-      align-items: stretch;
+    
+    .recommended-freeware h2 {
+      margin: 0;
+      font-size: 1.25rem;
     }
-
-    .software-card {
-      display: flex;
-      padding: 12px;
-      border-radius: 8px;
-      background: #fafafa;
-      border: 1px solid #e2e2e2;
-      gap: 12px;
+    
+    .recommended-freeware p {
+      margin: 8px 0 0;
     }
-
-    .software-icon {
-      flex-shrink: 0;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .software-icon img {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-      object-fit: contain;
-    }
-
-    .software-content {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .software-name {
-      margin: 0 0 4px;
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .software-name a {
-      color: var(--text);
+    
+    .recommended-freeware a {
+      color: var(--purple);
+      font-weight: 500;
       text-decoration: none;
     }
-
-    .software-name a:hover {
+    
+    .recommended-freeware a:hover {
       text-decoration: underline;
-    }
-
-    .software-desc {
-      margin: 0;
-      font-size: 0.85rem;
-      color: #444;
     }
     
     .about-photo {
@@ -493,37 +457,6 @@
           <li>Back up important files at least once a month to an external drive or cloud service.</li>
         </ul>
       </section>
-
-      <section id="recommended-freeware" class="recommended-freeware">
-        <h2>Driver's Recommended Free-Ware</h2>
-        <br>
-
-        <div class="software-grid">
-          <!-- EXAMPLE ITEM 1 -->
-          <article class="software-card">
-            <a
-              href="https://www.example.com/download"
-              class="software-icon"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="example-app-icon.png" alt="Example App Icon">
-            </a>
-            <div class="software-content">
-              <h3 class="software-name">
-                <a
-                  href="https://www.example.com/download"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Example App
-                </a>
-              </h3>
-              <p class="software-desc">
-                Short description goes here. Explain what it does and why you recommend it.
-              </p>
-            </div>
-          </article>
       
       <section id="about" class="about">
         <h2>Company Statement</h2>
@@ -571,6 +504,25 @@
         <p>Send a short description of what’s going on, how long it’s been happening, and what you’ve already tried to do to fix it. </p>
         <p>Our team will be in touch with you to discuss next steps and what to expect.</p>
       </section>
+
+      <section id="recommended-freeware" class="recommended-freeware">
+        <h2>Driver's Tech Recommended Freeware</h2>
+        <br>
+        <p>
+          These are programs I regularly trust and install for clients. 
+          All installers are stored safely in the
+          <a href="https://drive.google.com/drive/folders/1TdFcBb2ZBEMj5fp4FdDL69945tJrJlLq?usp=sharing" target="_blank" rel="noopener">
+          *Driver's Tech Vault* <- Click Here
+          </a>.
+        </p>
+      </section>
+
+
+
+
+
+
+      
     </main>
 
     <footer>
