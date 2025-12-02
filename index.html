@@ -81,6 +81,11 @@
     }
 
     nav {
+      position: sticky;       /* 👈 NEW: makes it stick while scrolling */
+      top: 0;                 /* 👈 NEW: pin to the top of the screen */
+      z-index: 999;           /* 👈 NEW: ensures it stays above other elements */
+      background: #fff;       /* 👈 NEW: avoids transparency weirdness */
+      
       margin-top: 10px;
       padding: 6px 0;
       font-size: 0.85rem;
@@ -366,16 +371,16 @@
     <header>
       <img src="DriversBanner.png" alt="Driver's Tech banner" class="logo">
       <div class="tagline">Genuine Tech Repair &amp; Consultation</div>
-
-      <div class="nav-scroller">
-        <nav>
-          <a href="#about"><strong>Company Statement</strong></a>
-          <a href="#services"><strong>Our Services</strong></a>
-          <a href="#tips"><strong>Driver’s Tips</strong></a>
-          <a href="#recommended-freeware"><strong>Driver's Tech Vault</strong></a>
-          <a href="#contact"><strong>Contact</strong></a>
-        </nav>
-      </div>
+      
+      
+      <nav>
+        <a href="#about"><strong>Company Statement</strong></a>
+        <a href="#services"><strong>Our Services</strong></a>
+        <a href="#tips"><strong>Driver’s Tips</strong></a>
+        <a href="#recommended-freeware"><strong>Driver's Tech Vault</strong></a>
+        <a href="#contact"><strong>Contact</strong></a>
+      </nav>
+    
     
 
       <div class="contact-strip">
@@ -388,8 +393,8 @@
           <a href="tel:13174173716">317-417-3716</a>
         </div>
         <div class="contact-item">
-        <span class="contact-label">Email:</span>
-        <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@Gmail.com</a>
+          <span class="contact-label">Email:</span>
+          <a href="mailto:DriversTechRepair@gmail.com">DriversTechRepair@Gmail.com</a>
         </div>
       </div>
     </header>
