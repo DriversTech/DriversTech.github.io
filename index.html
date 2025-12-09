@@ -85,25 +85,27 @@
       top: 0;                 /* 👈 NEW: pin to the top of the screen */
       z-index: 999;           /* 👈 NEW: ensures it stays above other elements */
       background: #fff;       /* 👈 NEW: avoids transparency weirdness */
-      
       margin-top: 10px;
       padding: 6px 0;
       font-size: 0.85rem;
       border-top: 1px solid rgba(0,0,0,0.06);
       border-bottom: 1px solid rgba(0,0,0,0.06);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 6px;  /* controls spacing — adjust if needed */
     }
 
     nav a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 4px 6px;
+      padding: 3px 6px;          /* smaller + tighter */
       text-decoration: none;
       color: var(--purple);
-      font-weight: 500;
+      font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
+      font-size: 0.80rem;        /* optional — tweak up/down if needed */
     }
-
+    
     nav a:hover {
       background: rgba(110, 211, 207, 0.12);
       border-radius: 4px;
